@@ -23,4 +23,22 @@ const JsUser = {
     lastlogedin : ["Monday", "wednesday","sunday"]
 
 }
-console.log(JsUser)
+// kiso object ki valeue ko change karne ke liye 
+// -------------------over right kiya jat h-------------------
+JsUser.email = "wwe.com"
+/*values ko lock karna take os ki value changs na ho*/
+// -------------------------Object.freeze(JsUser)-------------------------------------
+console.log(JsUser);
+/* ad function in javascrip */
+JsUser.greeting = function(){
+    console.log("hello world")
+}
+console.log(JsUser.greeting)
+/*------------------with reference-------------------*/
+console.log(JsUser.greeting())
+/*-----------------another method------------------*/
+
+JsUser.greetingtwo = function(){
+    console.log(`hello world, ${this.name}`)
+}
+console.log(JsUser.greetingtwo())
