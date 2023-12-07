@@ -45,7 +45,7 @@ or undefined ko bi flase mana jata h
 is function mein jab hum usernam ki koi valur pass hi nahi karein ge to wo undefined hogi 
 ! sign true ko false or false ko ture mein convert kar deta h
 isilye undefinded false or ! lgate hi wo true yani usernam defined nahi*/
-function loginUserMessege (usernam){
+function loginUserMessege (usernam /* form minimum name = "sam"*/){
     if(!usernam)/*(usernam === undefined)*/{
         console.log("o_ja_turja")
         /*return statement ke bad kuch bi exicute nahin hoga*/
